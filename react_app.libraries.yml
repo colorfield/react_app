@@ -1,0 +1,7 @@
+app:
+  css:
+    theme:
+      css/dist/react_app.css: {}
+  js:
+    js/startsWithPolyfill.js: { attributes: { defer: true }}
+    js/dist/react_app.js: { attributes: { defer: true }}

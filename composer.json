@@ -1,0 +1,14 @@
+{
+  "name": "drupal/react_app",
+  "type": "drupal-module",
+  "description": "React app boilerplate for progressive decoupling.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/react_app",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/react_app",
+    "source": "http://cgit.drupalcode.org/react_app"
+  },
+  "require": { }
+}
