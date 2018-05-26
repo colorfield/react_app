@@ -27,7 +27,9 @@ Generate some articles. Install devel_generate then
 
 Install JSON API 
 
-`composer require drupal/jsonapi`
-`drush en jsonapi`
+```
+composer require drupal/jsonapi
+drush en jsonapi
+```
 
 Head to /react-app/app to access the embedded React app.
