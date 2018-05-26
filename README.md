@@ -13,7 +13,8 @@ This boilerplate is based on the method adopted by the
 2. Install dependencies with `yarn install`
 3. Edit App.js and your components
 3. Run `yarn start` to start the development server
-4. Run `php build.php` to prepare the dist js and css.
+4. Run `php build.php` to prepare the dist js and css 
+that are referenced by _react_app.libraries.yml_.
 
 ### Drupal
 
