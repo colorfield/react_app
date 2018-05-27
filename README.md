@@ -10,20 +10,21 @@ This boilerplate is based on the method adopted by the
 
 ### React
 
-1. cd in js/src
-2. Install dependencies with `yarn install`
-3. Copy the _.env.example.js_ file to _.env.local.js_ 
-and set your Drupal 8 site url, it will be used while debugging React as a standalone app.
-4. Edit App.js and your components
-5. Run `yarn start` to start the development server
-6. Run `php build.php` to prepare the dist js and css 
+1. cd in _/path/to/module/react_app/js/src_.
+2. Install dependencies with `yarn install`.
+3. Copy the _constants/.env.example.js_ file to _constants/.env.local.js_ 
+and set there your Drupal 8 site url.
+It will be used while debugging React as a standalone app.
+4. Edit _App.js_ and your components.
+5. Run `yarn start` to start the development server.
+6. Run `php build.php` to prepare the dist js and css. 
 that are referenced by _react_app.libraries.yml_.
 
 ### Drupal
 
-Generate some articles. Install devel_generate then
+Generate some articles. Install devel_generate then:
 
-`drush genc 20 --types=latest_news`
+`drush genc 20 --types=article`
 
 Install JSON API 
 
@@ -32,4 +33,4 @@ composer require drupal/jsonapi
 drush en jsonapi
 ```
 
-Head to /react-app/app to access the embedded React app.
+Head to _http://drupal8site/react-app/app_ to access the embedded React app.
