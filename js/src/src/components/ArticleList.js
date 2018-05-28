@@ -20,6 +20,15 @@ class ArticleList extends React.Component {
     return `${api.getApiBaseUrl()}/jsonapi/node/article${params}`;
   }
 
+  /**
+   * Returns the entity id passed to the react container as a data attribute.
+   *
+   * @returns {number}
+   */
+  static getCurrentEntityId() {
+    return document.getElementById(api.getAppContainerId()).getAttribute('data-entity-id');
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -60,6 +69,7 @@ class ArticleList extends React.Component {
   }
 
   render() {
+    console.log(ArticleList.getCurrentEntityId());
     const { title } = this.props;
 
     if (this.state.hasError) {
@@ -67,7 +77,7 @@ class ArticleList extends React.Component {
     }
 
     if (this.state.isLoading) {
-      return <p>Loading...</p>;
+      return <p>Loading articles from JSON API...</p>;
     }
 
     return (

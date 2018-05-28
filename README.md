@@ -14,7 +14,7 @@ This boilerplate is based on the method adopted by the
 2. Install dependencies with `yarn install`.
 3. Copy the _constants/.env.example.js_ file to _constants/.env.local.js_ 
 and set there your Drupal 8 site url.
-It will be used while debugging React as a standalone app.
+It will be used while debugging React as a standalone app for JSON API requests.
 4. Edit _App.js_ and your components.
 5. Run `yarn start` to start the React development server 
 and test your app outside of Drupal.
