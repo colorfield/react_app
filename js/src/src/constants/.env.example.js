@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-// Copy this file as .env.local
+// Copy this file as .env.local.js
 // @todo add helpers for other environments
 
 // The Drupal url, without a trailing slash:
